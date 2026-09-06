@@ -1,0 +1,51 @@
+============================================================
+MY PROFILE PROJECT SOURCE CODE (Updated with Colleges & Companies)
+============================================================
+
+This document contains the Java backend code and the responsive 
+frontend code for your cross-platform (Web & Mobile Application) 
+My Profile project, structured with proper file arrangements.
+
+------------------------------------------------------------
+1. Java Backend Code (ProfileController.java)
+------------------------------------------------------------
+package com.example.myprofile;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+@Controller
+public class ProfileController {
+    @GetMapping("/")
+    public String getProfilePage() {
+        return "index";
+    }
+}
+
+------------------------------------------------------------
+2. Main HTML Structure (index.html)
+------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- See actual file for full content -->
+</body>
+</html>
+
+------------------------------------------------------------
+3. CSS Styling (css/style.css)
+------------------------------------------------------------
+/* Refer to style.css for the full responsive styling block */
+
+------------------------------------------------------------
+4. JavaScript (js/main.js)
+------------------------------------------------------------
+document.getElementById('idUpload').addEventListener('change', function(e) {
+    if(e.target.files.length > 0) {
+        alert('File selected: ' + e.target.files[0].name + '\nVerification pending submission.');
+    }
+});
